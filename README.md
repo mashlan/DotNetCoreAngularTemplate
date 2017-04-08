@@ -7,7 +7,7 @@ This is a simple starter project for using Angular version 4 with Webpack 2 host
 >removed. 
 
 
-##### Table of Contents
+#### Table of Contents
 [Features](#features)<br/>
 [Prerequisites](#prerequisites)<br/>
 [Instructions](#instructions)<br/>
@@ -22,7 +22,7 @@ This is a simple starter project for using Angular version 4 with Webpack 2 host
 * [.Net Core](https://www.microsoft.com/net/core#windowsvs2017)
 * [ASP.Net Core](https://www.asp.net/core)
 * [Bootstrap 4](http://v4-alpha.getbootstrap.com/)
-* [Fontawesome](http://fontawesome.io/)
+* [Font Awesome](http://fontawesome.io/)
 
 
 #### Prerequisites

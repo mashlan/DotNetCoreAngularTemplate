@@ -8,6 +8,10 @@ main {
     margin-top: 50px;
     display: block;
 }
-body {
+.markdown-section {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 2em;
+}body {
     padding: 0;
 }
