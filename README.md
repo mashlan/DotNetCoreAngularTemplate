@@ -49,6 +49,7 @@ Minimum requirements
 * [Download Angular Webpack Sample](https://angular.io/resources/zips/webpack/webpack.zip)
 * [Angular Style Guide](https://angular.io/docs/ts/latest/guide/style-guide.html)
 * [Markdown Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+* [GitHub Guide for Markdown](https://guides.github.com/features/mastering-markdown/)
 
 #### Folder Structure
 *comming soon*
