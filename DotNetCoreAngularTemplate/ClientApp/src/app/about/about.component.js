@@ -6,14 +6,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 const core_1 = require("@angular/core");
-require("./about.component.css");
+require("./about.component.scss");
 let AboutComponent = class AboutComponent {
 };
 AboutComponent = __decorate([
     core_1.Component({
         selector: "about-page",
         templateUrl: './about.component.html',
-        styles: ['./about.component.css']
+        styles: ['./about.component.scss']
     })
 ], AboutComponent);
 exports.AboutComponent = AboutComponent;

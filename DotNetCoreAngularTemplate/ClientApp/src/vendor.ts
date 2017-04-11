@@ -12,5 +12,5 @@ import "jquery";
 import 'tether';
 import 'tether/dist/js/tether.js';
 import 'bootstrap';
-import 'font-awesome/css/font-awesome.css';
-import 'bootstrap/dist/css/bootstrap.css';
+import 'font-awesome/scss/font-awesome.scss';
+import 'bootstrap/scss/bootstrap.scss';

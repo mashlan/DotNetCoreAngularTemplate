@@ -6,7 +6,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 const core_1 = require("@angular/core");
-require("./assets/css/styles.css");
+require("./assets/css/styles.scss");
 let AppComponent = class AppComponent {
 };
 AppComponent = __decorate([

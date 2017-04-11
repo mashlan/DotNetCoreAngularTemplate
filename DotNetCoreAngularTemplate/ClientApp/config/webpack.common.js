@@ -12,6 +12,9 @@ const PATHS = {
     homeIndex: path.join(__dirname, '../../Views/Home')
 };
 
+const extractSass = new ExtractTextPlugin({
+    filename: "[name].[contenthash].css",
+});
 
 module.exports = {
     entry: {
@@ -42,18 +45,23 @@ module.exports = {
                 loader: 'file-loader?name=assets/[name].[hash].[ext]'
             },
             {
-                test: /\.css$/,
-                exclude: helpers.root(CLIENT_DIR, APP_DIR),
-                loader: ExtractTextPlugin.extract({ fallbackLoader: 'style-loader', loader: 'css-loader?sourceMap' })
-            },
-            {
-                test: /\.css$/,
+                test: /\.scss$/,
                 include: helpers.root(CLIENT_DIR, APP_DIR),
                 loader: 'raw-loader'
+            },
+            {
+                test: /\.scss$/,
+                exclude: helpers.root(CLIENT_DIR, APP_DIR),
+                loader: ExtractTextPlugin.extract({
+                    fallback: 'style-loader',
+                    loader: ['css-loader', 'sass-loader']
+                })
             }
         ]
     },
     plugins: [
+        extractSass,
+
         // Workaround for angular/angular#11580
         new webpack.ContextReplacementPlugin(
             // The (\\|\/) piece accounts for path separators in *nix and Windows
