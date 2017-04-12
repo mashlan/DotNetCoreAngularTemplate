@@ -79,7 +79,7 @@ module.exports = {
 
         new HtmlWebpackPlugin({
             inject: true,
-            filename: PATHS.homeIndex + '/index.cshtml', 
+            filename: '../index.html', 
             template: PATHS.src + '/index.html'
         })
     ]
