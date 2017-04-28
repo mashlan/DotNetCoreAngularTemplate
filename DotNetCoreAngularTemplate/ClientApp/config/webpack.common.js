@@ -13,7 +13,7 @@ const PATHS = {
 };
 
 const extractSass = new ExtractTextPlugin({
-    filename: "[name].[contenthash].css",
+    filename: "[name].[contenthash].css"
 });
 
 module.exports = {
@@ -62,12 +62,17 @@ module.exports = {
     plugins: [
         extractSass,
 
-        // Workaround for angular/angular#11580
+        /*// Workaround for angular/angular#11580
         new webpack.ContextReplacementPlugin(
             // The (\\|\/) piece accounts for path separators in *nix and Windows
             /angular(\\|\/)core(\\|\/)(esm(\\|\/)src|src)(\\|\/)linker/,
             helpers.root(path.join(__dirname, PATHS.src)), // location of your src
             {} // a map of your routes
+        ),*/
+
+        new webpack.ContextReplacementPlugin(
+            /angular(\\|\/)core(\\|\/)@angular/,
+            path.resolve(__dirname, '../src')
         ),
 
         new webpack.ProvidePlugin({ $: 'jquery', jQuery: 'jquery', Tether: 'tether' }), // Maps these identifiers to the jQuery package (because Bootstrap expects it to be a global variable)

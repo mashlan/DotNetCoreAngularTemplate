@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26403.0
+VisualStudioVersion = 15.0.26403.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCoreAngularTemplate", "DotNetCoreAngularTemplate\DotNetCoreAngularTemplate.csproj", "{A2DED780-DD20-4B98-B721-D734CC23D2AE}"
 EndProject

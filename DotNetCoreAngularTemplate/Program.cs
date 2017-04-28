@@ -1,6 +1,6 @@
 ﻿using System.IO;
+using DotNetCoreAngularTemplate.Web;
 using Microsoft.AspNetCore.Hosting;
-using Serenity.Web;
 
 namespace DotNetCoreAngularTemplate
 {
